@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leonardo da Vinci</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .container {
+            display: grid;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            grid-row-start: 1;
+            grid-row-end: 1;
+        }
+
+        .menu {
+            grid-column-start: 6;
+            grid-column-end: 12;
+            grid-row-start: 1;
+            grid-row-end: 1;
+            justify-content: center;
+            gap: 20px;
+        }
+
+
+        .imagem_leo {
+            grid-column-start: 1;
+            grid-column-end: 3;
+
+        }
+
+        .principal {
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+
+        }
+
+        header {
+            background-color: #506E6A;
+            
+        }
+
+        ul {
+            list-style-type: none;
+
+            color: #506E6A;
+        }
+
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid #506E6A 1px;
+        }
+
+        li {
+            float: left;
+        }
+
+        a:hover {
+            background-color: #506E6A;
+            color: white;
+        }
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            grid-row-start: 1;
+            grid-row-end: 6;
+            background-color: #506E6A;
+            color: white;
+            text-align: center;
+        }
+
+        /* media query para dispositivos móveis */
+        @media only screen and (max-width: 767px) {
+            .wrapper {
+               grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+
+            .imagem_leo {
+                grid-column-start: 1;
+ grid-column-end: 1;
+                
+            }
+
+            .principal {
+                grid-column-start: 1;
+ grid-column-end: 1;
+                
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <h1 style="color: white; text-align: center;">Biografia Leonardo da Vinci</h1>
+        <br>
+
+    </header>
+    <nav class="container menu">
+        <ul>
+            <li><a href="index.html">Biografia</a></li>
+            <li><a href="obras.html">Obras</a></li>
+            <li><a href="curiosidades.html">Curiosidades</a></li>
+        </ul>
+    </nav>
+    <div class="container wrapper">
+        <aside class="imagem_leo">
+            <img src="leonardo-da-vinci.png">
+            <div class="infos">
+                <p><strong>Ocupação</strong> Pintor italiano</p>
+                <p>
+                    <strong>Data do Nascimento</strong>
+                    15/04/1452
+                </p>
+                <p><strong>Data da Morte</strong> 02/05/1519 (aos 67 anos)</p>
+            </div>
+
+        </aside>
+        <section class="principal">
+            <h1>
+                Leonardo da Vinci - Curiosidades
+            </h1>
+            <p>1- Leonardo di Ser Piero da Vinci nasceu em 15 de abril de 1452, no vilarejo de Anchiano, que fica na cidade de Vinci, na Toscana. Era filho ilegítimo, tido fora do casamento. Seu pai seria um rico tabelião, e sua mãe, uma camponesa.</p>
+            <p>2- O artista teria vivido até os cinco anos com sua mãe. Depois, teria passado a morar com seu pai, avós e tios. Mas nunca recebeu uma educação formal, apenas instruções em casa de leitura, escrita e matemática.</p>
+            <p>3- Da Vinci era canhoto e, para não borrar os papeis, costumava escrever da direita para a esquerda e de maneira espelhada.Alguns historiadores alegam que a escrita espelhada também seria uma maneira de afastar plagiadores.</p>
+            <p>4- Aos 14 anos, Da Vinci foi aprendiz de Andrea di Cione, conhecido como Verrocchio, um famoso pintor e escultor da sua época. Dizem que o jovem teria colaborado com o mestre no quadro "O Batismo de Cristo" (1475). Assustado com o talento do pupilo, Verrocchio decidiu nunca mais se arriscar na pintura.</p>
+            <p>5- Registros da corte florentina de 1476 mostram que Da Vinci e outros 3 jovens foram, à época, acusados de sodomia. Eles teriam sido flagrados em relações homossexuais com um prostituto. O gênio "desapareceu" por dois anos após o episódio.</p>
+            <p>6- Da Vinci e Michelangelo não se davam bem. Os dois artistas viveram na mesma época e trocavam críticas em relação a seus trabalhos.</p>
+            <p>7- Leonardo Da Vinci desenvolveu pesquisas e conhecimento em várias áreas. Ele explicou porque o céu era azul, desenhou projetos para lentes de contato, tanques de guerra, pontes, energia solar, calculadora, máquinas voadoras, paraquedas e helicópteros. Alguns projetos foram colocados em prática atualmente e funcionam.</p>
+            <p>8- O artista também foi um grande estudioso da anatomia. Da Vinci dissecava corpos e fazia desenhos e anotações precisos sobre a musculatura e os órgãos humanos.</p>
+            <p>9- Quando seu pai morreu, seus irmãos mais novos conseguiram deserda-lo pelo fato de ser bastardo. Mas Da Vinci herdou, anos depois, as posses de seu tio. Em seu testamento, em um gesto inusitado, Da Vinci deixou os próprios bens para seus irmãos.</p>
+            <p>10- Da Vinci chegou a apresentar suas ideias à poderosa família Médici, porém foi humilhado pela sua origem ilegítima. Sem se abalar, o artista procurou o rival, Ludovico Sforza, de Milão, que o patrocinou.
+            </p>
+        </section>
+    </div>
+    <footer class="container">
+        <h1>Desenvolvido para fins educacionais</h1>
+    </footer>
+    </div>
+</body>
+
+</html>
